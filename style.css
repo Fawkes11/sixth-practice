@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;   
+
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+
+}
+.container{
+    width: 80%;
+    height: 80%;
+}
+.first-section{
+    display: flex;
+    justify-content: space-between;
+}
+.entry-info{
+    max-width: 35%; 
+}
+.main-tittle{
+    display: inline-block;
+    width: 100%;
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+    padding-top: 50px;
+}
+.main-info{
+    padding-top: 10px;
+    line-height: 30px;
+    color: hsl(303, 10%, 53%);
+}
+.star-box{
+     /* AQUI QUEDE ARREGLANDO EL CONTENEDOR DE ESTRELLLAS A LA DERECHA */
+    
+    max-width: 100%;
+    padding: 30px;
+    
+}
+.rated{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 10px;    
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+}
+
+.rated svg {
+    padding: 5px;
+}
+.rated-info{
+    padding-left: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.second-section{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.experien-box{
+    max-width: 28%;
+    padding: 15px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+}
+.perfil-info{
+    display: flex;
+}
+.perfil-info img{
+    border-radius: 50%;
+    transform: scale(0.5);
+}
+.buy-info{
+    align-self: center;
+}
+.name-info{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.buyer-info{
+    color: hsl(333, 80%, 67%);
+}
+.description-info{
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+}
+.experien-box:nth-child(2){
+    transform: translateY(7%);
+}
+.experien-box:nth-child(3){
+    transform: translateY(14%);
+}
+
+@media (max-width: 375px){
+    body{
+        flex-direction: column;
+    }
+    .container{width: 90%;}
+    .first-section{
+        display: flex;
+        flex-direction: column; 
+        
+    }
+    .entry-info{
+        max-width: 95%;
+        
+    }
+    .main-tittle{
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+    }
+    .main-info{
+        text-align: center;        
+    }
+    .star-box{
+       width: 100%;
+       padding: 0;       
+   }
+   .rated{
+    padding-left: 0;
+    padding-right: 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 95%;   
+        
+    }
+    .rated svg{
+        
+        transform: translateX(350%);
+    }
+    .rated p {
+        display: block;
+        text-align: center;
+    }
+
+    
+    .second-section{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .experien-box{
+        max-width: 95%;
+    }
+    .perfil-info{
+        display: flex;
+    }
+    .attribution{
+        display: none;
+    }
+}
+    
+
+
+@media (min-width: 376px){
+    .rated:nth-child(1){
+        transform: translateX(-20%);
+    }
+    .rated:nth-child(2){
+        transform: translateX(-10%);
+    }
+    .rated{
+        display: flex;
+        align-items: center; 
+        margin: 25px; 
+        min-width: 92%;      
+    }
+    
+    .experien-box:nth-child(2){
+        transform: translateY(7%);
+    }
+    .experien-box:nth-child(3){
+        transform: translateY(14%);
+    }
+    .attribution{
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+    }
+}
