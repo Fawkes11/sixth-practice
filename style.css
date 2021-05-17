@@ -15,7 +15,7 @@ body{
 
 }
 .container{
-    width: 80%;
+    width: 70%;
     height: 80%;
 }
 .first-section{
@@ -23,11 +23,11 @@ body{
     justify-content: space-between;
 }
 .entry-info{
-    max-width: 35%; 
+    width: 45%; 
 }
 .main-tittle{
     display: inline-block;
-    width: 100%;
+    width: 90%;
     color: hsl(300, 43%, 22%);
     font-size: 40px;
     padding-top: 50px;
@@ -40,13 +40,14 @@ body{
 .star-box{
      /* AQUI QUEDE ARREGLANDO EL CONTENEDOR DE ESTRELLLAS A LA DERECHA */
     
-    max-width: 100%;
+    max-width: 40%;
     padding: 30px;
+    padding-top: 45px;
     
 }
 .rated{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 25px;
     padding-right: 10px;    
     background-color: hsl(300, 24%, 96%);
@@ -54,7 +55,7 @@ body{
 }
 
 .rated svg {
-    padding: 5px;
+    padding: 2px;
 }
 .rated-info{
     padding-left: 10px;
@@ -102,18 +103,16 @@ body{
 }
 
 @media (max-width: 375px){
-    body{
-        flex-direction: column;
-    }
+
     .container{width: 90%;}
     .first-section{
+        width: 100%;
         display: flex;
         flex-direction: column; 
         
     }
     .entry-info{
-        max-width: 95%;
-        
+        width: 95%;        
     }
     .main-tittle{
         display: block;
@@ -125,7 +124,7 @@ body{
         text-align: center;        
     }
     .star-box{
-       width: 100%;
+       min-width: 100%;
        padding: 0;       
    }
    .rated{
@@ -140,7 +139,7 @@ body{
     }
     .rated svg{
         
-        transform: translateX(350%);
+        transform: translateX(450%);
     }
     .rated p {
         display: block;
@@ -160,7 +159,14 @@ body{
     .perfil-info{
         display: flex;
     }
+
     .attribution{
+        display: none;
+    }
+    .img-top-bg{
+        display: none;
+    }
+    .img-bottom-bg{
         display: none;
     }
 }
@@ -190,6 +196,21 @@ body{
     .attribution{
         position: absolute;
         bottom: 0;
-        left: 45%;
+        left: 40%;
+    }
+    .img-top-bg{
+        width: 100%;
+        height: 100%;
+        background-image: url(images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .img-bottom-bg{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
     }
 }
